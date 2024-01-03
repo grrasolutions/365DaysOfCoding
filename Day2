@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+       
+        
+        .first{
+            width: 100%;
+            height: 20px;
+            padding-top:10px ;
+            padding-bottom:10px ;
+           
+           
+            }
+            ol{
+                display: flex;
+                
+            }
+            
+            li{
+                font-size: medium;
+                list-style: none;
+                color: white;
+                margin-right: 30px;
+            }
+            .new{
+                height: 35px;
+                width: 40px;
+                margin-left: 0%;
+                margin-top: 0%;
+            }
+            .contact{
+                position: fixed;
+                right: 100px;
+                background-color:aquamarine;
+                font-size: larger;
+                padding: 15px;
+        
+                font-weight: bold;
+            }
+            .second{
+                height: 400px;
+                
+                display: flex;
+                
+            }
+            .matter{
+                margin-right: 100px;
+                height: 100px;
+                width: 800px;
+                
+              }
+
+
+            .mypic{
+                height: 380px;
+                width: 300px;
+                margin: auto;
+                margin-top: 100px;
+                border-radius: 10px;
+               
+            }
+            h1{
+                margin: auto;
+                
+              
+                color: aqua;
+                margin-top: 100px;
+                font-size: 40px;
+                height: 0%;
+                
+               
+            }
+            h2{
+               
+                height: 5%;
+               
+                color:white;
+                font-weight: bold;
+                font-size: 300%;
+                
+            }
+
+            h3{
+                color: aqua;
+                font-weight: bold;
+                font-size: 70px;
+                height: 15%;
+             }
+
+            p{
+              
+                color: white;
+                margin-top: 10px;
+               }
+
+            .down{
+                background-color: black;
+                color: aqua;
+                border: 1px solid aqua;
+                font-size: small;
+                padding: 20px;
+                font-size: larger;
+
+            }
+</style>
+
+</head>
+<body>
+  
+   
+        <div class="first">
+            
+            <ol>
+                <li><img src="logo.jpg" alt="" class="new"></li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Blog</li>
+                <li>More</li>
+                <button type="button" class="contact">Contact</button>
+            </ol>
+        </div>
+
+        <div class="second">
+            <img src="employeeimg.jpeg" alt="" class="mypic">
+            <div class="matter">
+            <h1>Anonymous</h1>
+            <h2>I'm a Web</h2>
+            <h3>Developer</h3>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, ratione. Praesentium nam voluptas eveniet eos veritatis architecto laboriosam, ab illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consectetur quod aperiam eius sint soluta eaque inventore exercitationem suscipit, sapiente assumenda nihil vel, numquam ullam voluptatibus. Error distinctio a earum deserunt at accusamus nesciunt corporis animi, iste nulla ab quidem corrupti saepe sapiente. Fuga amet quos, modi itaque facere commodi?</p>
+            <button type="button" class="down">Download CV</button>
+        </div>
+   
+            
+        </div>
+       
+     
+
+
+
+</body>
+</html>
