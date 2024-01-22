@@ -1,0 +1,138 @@
+.sikher{
+    display: grid;
+    place-items: center;
+}
+
+.flag{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 120px solid #ff8020;
+    border-bottom: 32px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform-origin: left;
+    animation: flagWaving 4s ease-in-out infinite;
+}
+
+@keyframes flagWaving {
+    0% { transform: rotate(0deg) rotateY(0deg); }
+    50% { transform: rotate(0deg) rotateY(50deg);
+    border-bottom: 25px solid transparent; }
+    100% { transform: rotate(0deg) rotateY(0deg); }
+}
+
+
+
+.text{
+    font-size: 10px;
+    position: relative;
+    top: -16px;
+    left: -104px;
+    width: 100px;
+}
+.image{
+    width: 160px;
+    position: absolute;
+    top: 236px;
+}
+.sikher-top,
+.sikher-top1,
+.sikher-top2,
+.sikher-top3,
+.sikher-top4,
+.sikher-top5,
+.sikher-top6,
+.sikher-top7{
+    height: 13px;
+    background-color: #ef9c49;
+    box-shadow: inset 0 0 10px rgb(255 231 231 / 50%);
+    border-radius: 3px 3px 0 0;
+}
+
+.sikher-top{
+    width: 30px;
+}
+
+.sikher-top1{
+    width : 80px;
+}
+.sikher-top2{
+    width : 150px;
+}
+.sikher-top3{
+    width : 220px;
+}
+.sikher-top4{
+    width : 290px;
+}
+.sikher-top5{
+    width : 360px;
+}
+.sikher-top6{
+    width : 430px;
+}
+.sikher-top7{
+    width : 500px;
+}
+
+.gate {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px; /* Adjust the gap as needed */
+    width: 350px;
+    place-items: center;
+}
+
+.piller {
+    height: 200px;
+    width: 30px;
+    background-color: #ef9c49;
+    box-shadow: inset 0 0 10px rgb(255 231 231 / 50%);
+}
+
+.gate1{
+    height: 200px;
+    width: 150px;
+    background-color: #ffbf6f;
+    display: grid;
+    align-items: flex-end;
+    /* box-shadow: inset 0 0 15px rgb(191 191 191 / 50%); */
+}
+
+.temple {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+
+.stairs {
+    display: grid;
+    place-items: center;
+}
+
+.stair1,
+.stair2,
+.stair3,
+.stair4 {
+    height: 20px;
+    background-color: #ef9c49;
+    box-shadow: inset 0 0 10px rgb(255 231 231 / 50%);
+}
+
+.stair1 {
+    width: 350px;
+}
+.stair2 {
+    width: 400px;
+}
+
+.stair3 {
+    width: 450px;
+}
+
+.stair4 {
+    width: 500px;
+}
