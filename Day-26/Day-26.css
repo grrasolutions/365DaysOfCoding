@@ -1,0 +1,180 @@
+.flag{
+    width:200px;
+    margin:100px auto;
+ }
+ .orange{
+    width:200px;
+    height:40px;
+    background-color:#FF9933;
+ }
+ .white{
+    width:200px;
+    height:40px;
+    background-color:#FFFFFF;
+ }
+ .green{
+    width:200px;
+    height:40px;
+    background-color:#128807;
+ }
+ .circle {
+   width:35px;
+   height:35px;
+   border:2px solid #000080;
+   border-radius:50%;
+   margin:0px auto;
+   -webkit-animation: circle 5s infinite;
+   animation: circle 10s linear  2s infinite;
+ }
+ .circle:after {
+   content:"";
+   width:2px;
+   height:2px;
+   border-radius:50%;
+   background:#000080;
+ }
+ .bar {
+   position: absolute;
+   display:inline-block;
+   height:35px;
+   width:2px;
+   background:#000080;
+   left:47%;
+ }
+ .bar:nth-child(1) {
+      -ms-transform: rotate(15deg);
+     -webkit-transform: rotate(15deg); 
+     transform: rotate(15deg);
+ }
+ .bar:nth-child(2) {
+      -ms-transform: rotate(30deg);
+     -webkit-transform: rotate(30deg); 
+     transform: rotate(30deg);
+ }
+ .bar:nth-child(3) {
+      -ms-transform: rotate(45deg);
+     -webkit-transform: rotate(45deg); 
+     transform: rotate(45deg);
+ }
+ .bar:nth-child(4) {
+      -ms-transform: rotate(60deg);
+     -webkit-transform: rotate(60deg); 
+     transform: rotate(60deg);
+ }
+ .bar:nth-child(5) {
+      -ms-transform: rotate(75deg);
+     -webkit-transform: rotate(75deg); 
+     transform: rotate(75deg);
+ }
+ .bar:nth-child(6) {
+      -ms-transform: rotate(90deg);
+     -webkit-transform: rotate(90deg); 
+     transform: rotate(90deg);
+ }
+ .bar:nth-child(7) {
+      -ms-transform: rotate(105deg);
+     -webkit-transform: rotate(105deg); 
+     transform: rotate(105deg);
+ }
+ .bar:nth-child(8) {
+      -ms-transform: rotate(120deg);
+     -webkit-transform: rotate(120deg); 
+     transform: rotate(120deg);
+ }
+ .bar:nth-child(9) {
+      -ms-transform: rotate(135deg);
+     -webkit-transform: rotate(135deg); 
+     transform: rotate(135deg);
+ }
+ .bar:nth-child(10) {
+      -ms-transform: rotate(150deg);
+     -webkit-transform: rotate(150deg); 
+     transform: rotate(150deg);
+ }
+ .bar:nth-child(11) {
+      -ms-transform: rotate(165deg);
+     -webkit-transform: rotate(165deg); 
+     transform: rotate(165deg);
+ }
+  
+ @-webkit-keyframes circle {
+     from {
+       -ms-transform: rotate(0deg);
+     -webkit-transform: rotate(0deg); 
+     transform: rotate(0deg);
+   }
+     to {
+      -ms-transform: rotate(360deg);
+     -webkit-transform: rotate(360deg); 
+     transform: rotate(360deg);
+   }
+ }
+ 
+ .flagwave {
+ 
+     width: 200px;
+     height: 120px;
+     margin:-220px auto;
+     z-index: 2;
+ 
+     background-image: 
+         
+         -webkit-gradient(
+             linear, 
+             0% 30%, 
+             50% top, 
+             color-stop(0%,rgba(255,255,255,0)), 
+             color-stop(40%,rgba(255,255,255,0)), 
+             color-stop(90%,rgba(255,255,255,.3)), 
+             color-stop(100%,rgba(255,255,255,0))),
+         
+         -webkit-gradient(
+             linear, 
+             50% 30%, 
+             100% top, 
+             color-stop(0%,rgba(224,225,225,0)), 
+             color-stop(25%,rgba(225,225,225,.3)), 
+             color-stop(50%,rgba(224,225,225,0)), 
+             color-stop(80%,rgba(224,225,225,.3)), 
+             color-stop(100%,rgba(224,225,225,0)));
+     
+     background-size: 200%;
+     background-position: right;
+     
+     -webkit-animation-name: flagwave;
+     -webkit-animation-duration: 10s;
+     -webkit-animation-timing-function: linear;
+     -webkit-animation-iteration-count: infinite;
+ }
+ 
+     @-webkit-keyframes flagwave {
+     
+         0% {
+             background-position: -400px 0px, -400px 0px, -400px 0px,-400px 0px;
+         }
+     
+         100% {
+             background-position: 800px 0px, 800px 0px, 800px 0px, 800px 0px;
+         }
+ }
+ #loader{
+    color:#000;
+    background:red;
+    background: linear-gradient(to bottom right, #FF9933,#FFFFFF,#128807);
+    height:20px;
+    width:100px;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+     animation-iteration-count: infinite;
+    animation-name: load;
+ }
+ @keyframes load {
+     0%   {width:20px;}
+     25%  {width:50px}
+     50%  {width:100px;}
+     75%  {width:150px;}
+     100% {width:200px; }
+ } 
+ .loaderContainer{
+    margin:10% auto;
+ }
