@@ -1,0 +1,678 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,700");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #8fe2ec;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/851550/dotnoise-light-grey.png");
+  animation: static 2s steps(1) infinite;
+}
+
+.grain {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/851550/dotnoise-light-grey.png");
+  animation: static 2s steps(1) infinite;
+  opacity: 0.4;
+  z-index: 11;
+}
+
+@keyframes static {
+  0% {
+    background-position: 6400% 5100%;
+  }
+  1% {
+    background-position: 2400% 6100%;
+  }
+  2% {
+    background-position: 3000% 5800%;
+  }
+  3% {
+    background-position: 6200% 8700%;
+  }
+  4% {
+    background-position: 3800% 8800%;
+  }
+  5% {
+    background-position: 3900% 3400%;
+  }
+  6% {
+    background-position: 2500% 5400%;
+  }
+  7% {
+    background-position: 1000% 1500%;
+  }
+  8% {
+    background-position: 2600% 7700%;
+  }
+  9% {
+    background-position: 3700% 3200%;
+  }
+  10% {
+    background-position: 5700% 5900%;
+  }
+  11% {
+    background-position: 7100% 1700%;
+  }
+  12% {
+    background-position: 8300% 5600%;
+  }
+  13% {
+    background-position: 7100% 7600%;
+  }
+  14% {
+    background-position: 5200% 2300%;
+  }
+  15% {
+    background-position: 6800% 300%;
+  }
+  16% {
+    background-position: 3900% 8600%;
+  }
+  17% {
+    background-position: 2800% 2600%;
+  }
+  18% {
+    background-position: 100% 1800%;
+  }
+  19% {
+    background-position: 5400% 2000%;
+  }
+  20% {
+    background-position: 7300% 5400%;
+  }
+  21% {
+    background-position: 1900% 8700%;
+  }
+  22% {
+    background-position: 8500% 4400%;
+  }
+  23% {
+    background-position: 9100% 1200%;
+  }
+  24% {
+    background-position: 5100% 1900%;
+  }
+  25% {
+    background-position: 5800% 1200%;
+  }
+  26% {
+    background-position: 4500% 7700%;
+  }
+  27% {
+    background-position: 8300% 5700%;
+  }
+  28% {
+    background-position: 2500% 8500%;
+  }
+  29% {
+    background-position: 1600% 500%;
+  }
+  30% {
+    background-position: 4200% 6000%;
+  }
+  31% {
+    background-position: 1200% 1200%;
+  }
+  32% {
+    background-position: 1600% 4000%;
+  }
+  33% {
+    background-position: 800% 1700%;
+  }
+  34% {
+    background-position: 3200% 3700%;
+  }
+  35% {
+    background-position: 5900% 9000%;
+  }
+  36% {
+    background-position: 2800% 1100%;
+  }
+  37% {
+    background-position: 6300% 8800%;
+  }
+  38% {
+    background-position: 6500% 4800%;
+  }
+  39% {
+    background-position: 2500% 4200%;
+  }
+  40% {
+    background-position: 3200% 900%;
+  }
+  41% {
+    background-position: 8900% 5300%;
+  }
+  42% {
+    background-position: 8700% 6000%;
+  }
+  43% {
+    background-position: 2600% 3200%;
+  }
+  44% {
+    background-position: 7200% 9300%;
+  }
+  45% {
+    background-position: 2700% 9500%;
+  }
+  46% {
+    background-position: 9400% 4800%;
+  }
+  47% {
+    background-position: 7700% 2600%;
+  }
+  48% {
+    background-position: 9000% 5000%;
+  }
+  49% {
+    background-position: 8200% 6700%;
+  }
+  50% {
+    background-position: 3500% 8200%;
+  }
+  51% {
+    background-position: 7100% 200%;
+  }
+  52% {
+    background-position: 4000% 600%;
+  }
+  53% {
+    background-position: 7400% 6200%;
+  }
+  54% {
+    background-position: 1800% 700%;
+  }
+  55% {
+    background-position: 300% 1700%;
+  }
+  56% {
+    background-position: 6900% 2600%;
+  }
+  57% {
+    background-position: 1900% 7000%;
+  }
+  58% {
+    background-position: 6100% 2200%;
+  }
+  59% {
+    background-position: 900% 8800%;
+  }
+  60% {
+    background-position: 8900% 3900%;
+  }
+  61% {
+    background-position: 900% 8800%;
+  }
+  62% {
+    background-position: 4500% 4300%;
+  }
+  63% {
+    background-position: 4800% 5800%;
+  }
+  64% {
+    background-position: 2200% 6600%;
+  }
+  65% {
+    background-position: 800% 2800%;
+  }
+  66% {
+    background-position: 4400% 7600%;
+  }
+  67% {
+    background-position: 2800% 900%;
+  }
+  68% {
+    background-position: 7600% 6600%;
+  }
+  69% {
+    background-position: 3000% 1800%;
+  }
+  70% {
+    background-position: 7900% 2500%;
+  }
+  71% {
+    background-position: 7800% 3400%;
+  }
+  72% {
+    background-position: 5600% 8400%;
+  }
+  73% {
+    background-position: 7300% 3200%;
+  }
+  74% {
+    background-position: 4100% 7200%;
+  }
+  75% {
+    background-position: 3500% 800%;
+  }
+  76% {
+    background-position: 9200% 1000%;
+  }
+  77% {
+    background-position: 8900% 7500%;
+  }
+  78% {
+    background-position: 4400% 4300%;
+  }
+  79% {
+    background-position: 1200% 6500%;
+  }
+  80% {
+    background-position: 9000% 1200%;
+  }
+  81% {
+    background-position: 4400% 9700%;
+  }
+  82% {
+    background-position: 5900% 2000%;
+  }
+  83% {
+    background-position: 8300% 6400%;
+  }
+  84% {
+    background-position: 5000% 7900%;
+  }
+  85% {
+    background-position: 7500% 6700%;
+  }
+  86% {
+    background-position: 9400% 9400%;
+  }
+  87% {
+    background-position: 4000% 3700%;
+  }
+  88% {
+    background-position: 900% 4200%;
+  }
+  89% {
+    background-position: 3500% 900%;
+  }
+  90% {
+    background-position: 1800% 5700%;
+  }
+  91% {
+    background-position: 3500% 8500%;
+  }
+  92% {
+    background-position: 3600% 2000%;
+  }
+  93% {
+    background-position: 4300% 8200%;
+  }
+  94% {
+    background-position: 2800% 7800%;
+  }
+  95% {
+    background-position: 5800% 4000%;
+  }
+  96% {
+    background-position: 1600% 7400%;
+  }
+  97% {
+    background-position: 3000% 9000%;
+  }
+  98% {
+    background-position: 1600% 200%;
+  }
+}
+a {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  z-index: 12;
+}
+
+.cassette {
+  width: 554px;
+  height: 350px;
+  background: #4b4b56;
+  border-radius: 10px;
+  border: 4px solid #353535;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .cassette {
+    width: 300px;
+    height: 190px;
+    font-size: 0.55em;
+  }
+}
+.cassette:after {
+  display: block;
+  content: "";
+  width: 104%;
+  height: 30%;
+  margin-left: -2%;
+  background: #4b4b56;
+  border-radius: 10px;
+  bottom: 7%;
+  position: absolute;
+  z-index: -1;
+  border: 4px solid #353535;
+}
+.cassette:before {
+  display: block;
+  content: "";
+  width: 89%;
+  height: 4px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  top: 3%;
+  position: relative;
+}
+.cassette .label {
+  width: 90%;
+  height: 64%;
+  position: relative;
+  margin: auto;
+  top: 7%;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 4px #353535;
+  background: linear-gradient(#e6584c 8%, #f8f8f8 8%, #f8f8f8 30%, #484848 30%, #484848 31.5%, #f8f8f8 31.5%, #f8f8f8 36%, #484848 36%, #484848 37.5%, #f8f8f8 37.5%, #f8f8f8 39%, #484848 39%, #484848 40.5%, #f8f8f8 40.5%, #f8f8f8 42%, #484848 42%, #484848 43.5%, #f8f8f8 43.5%, #f8f8f8 45%, #484848 45%, #484848 46.5%, #f8f8f8 46.5%, #f8f8f8 48%, #484848 48%, #484848 49.5%, #f8f8f8 49.5%, #f8f8f8 51%, #484848 51%, #484848 52.5%, #f8f8f8 52.5%, #f8f8f8 54%, #484848 54%, #484848 55.5%, #f8f8f8 55.5%, #f8f8f8 57%, #484848 57%, #484848 58.5%, #f8f8f8 58.5%, #f8f8f8 60%, #484848 60%, #484848 61.5%, #f8f8f8 61.5%, #f8f8f8 63%, #484848 63%, #484848 64.5%, #f8f8f8 64.5%, #f8f8f8 66%, #484848 66%, #484848 67.5%, #f8f8f8 67.5%, #f8f8f8 69%, #484848 69%, #484848 70.5%, #f8f8f8 70.5%, #f8f8f8 72%, #484848 72%, #484848 73.5%, #f8f8f8 73.5%, #f8f8f8 75%, #484848 75%, #484848 76.5%, #f8f8f8 76.5%, #f8f8f8 78%, #484848 78%, #484848 79.5%, #f8f8f8 79.5%, #f8f8f8 81%, #484848 81%, #484848 82.5%);
+}
+.cassette .label:before {
+  position: absolute;
+  display: block;
+  top: 12%;
+  left: 3%;
+  content: "B";
+  padding: 3px;
+  text-align: center;
+  width: 1.3em;
+  height: 1.3em;
+  color: #f8f8f8;
+  font-weight: bold;
+  font-size: 1.4em;
+  background: #4b4b56;
+  border-radius: 1px;
+}
+.cassette .label:after {
+  position: absolute;
+  display: block;
+  content: "N.R. [                   ] ☐︎IN ☒︎OUT";
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  top: 22%;
+  right: 3%;
+  color: #4b4b56;
+}
+.cassette .label .cutout {
+  width: 70%;
+  height: 46%;
+  position: relative;
+  margin: auto;
+  top: 36%;
+  background: #4b4b56;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 4px #353535;
+}
+.cassette .label .cutout:before {
+  position: absolute;
+  display: block;
+  content: "Normal Bias 120µ︎s EQ";
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85em;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  bottom: -25%;
+}
+.cassette .label .cutout:after {
+  position: absolute;
+  display: block;
+  content: "A 60";
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5em;
+  font-weight: bold;
+  top: 100%;
+  right: 0;
+  background: #e6584c;
+  background-image: linear-gradient(90deg, #e6584c 44%, rgba(255, 255, 255, 0.8) 44%, rgba(255, 255, 255, 0.8) 45%, #e6584c 45%);
+  height: 36%;
+  padding: 1.2% 5%;
+  box-shadow: inset 0 0 0 8px #e6584c;
+  font-family: "Roboto", sans-serif;
+}
+.cassette .label .cutout .reel_hole {
+  position: absolute;
+  background: #adadad;
+  width: 20%;
+  top: 15%;
+  border: 3px solid #353535;
+  box-shadow: 0 0 0 3px #4b4b56, 0 0 0 5px #353535;
+  border-radius: 50%;
+  right: 5.5%;
+}
+.cassette .label .cutout .reel_hole:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  box-shadow: inset 0 0 0 6px #adadad;
+  background: #353535;
+  border-radius: 50%;
+}
+.cassette .label .cutout .reel_hole:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: #8fe2ec;
+  transform: scale(0.75);
+  z-index: 10;
+}
+.cassette .label .cutout .reel_hole:first-of-type {
+  left: 5.5%;
+}
+.cassette .label .cutout .reel_hole .gear {
+  position: absolute;
+  width: 14%;
+  height: 86%;
+  background: #8fe2ec;
+  top: 50%;
+  left: 50%;
+  margin-left: -7%;
+  margin-top: -43%;
+  box-shadow: 0 0 0 2px #353535;
+  animation: gears 3.5s linear infinite alternate;
+}
+.cassette .label .cutout .reel_hole .gear:before, .cassette .label .cutout .reel_hole .gear:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #8fe2ec;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0 2px #353535;
+  transform: rotate(240deg);
+}
+.cassette .label .cutout .reel_hole .gear:after {
+  transform: rotate(120deg);
+  width: 220%;
+  top: 2%;
+  left: -75%;
+  background: none;
+  box-shadow: -2px -2px 0 0 #353535;
+  background-image: linear-gradient(90deg, #8fe2ec calc(50% - 1px), #353535 calc(50% - 1px), #353535 calc(50% + 1px), #e6584c calc(50% + 2px)), linear-gradient(#8fe2ec calc(100% - 2px), #353535 calc(100% - 2px));
+  background-size: 100% 50%, 50% 100%;
+  background-repeat: no-repeat;
+}
+@keyframes gears {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(2160deg);
+  }
+}
+.cassette .label .cutout .window {
+  position: absolute;
+  background: #8fe2ec;
+  width: 40%;
+  height: 68%;
+  top: 15%;
+  left: 30%;
+  border: 3px solid #353535;
+  overflow: hidden;
+}
+.cassette .label .cutout .window:after {
+  display: block;
+  position: absolute;
+  background: linear-gradient(transparent 13%, rgba(255, 255, 255, 0.4) 13%, rgba(255, 255, 255, 0.4) 24%, transparent 24%, transparent 34%, rgba(255, 255, 255, 0.4) 34%, rgba(255, 255, 255, 0.4) 50%, transparent 50%);
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+.cassette .label .cutout .window .spool {
+  position: absolute;
+  top: -22%;
+  width: 70%;
+  background: #adadad;
+  border: 3px solid #353535;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #626262, 0 0 0 13px #353535;
+}
+.cassette .label .cutout .window .spool:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.cassette .label .cutout .window .spool:first-of-type {
+  left: -64%;
+  animation: spooling 3.5s linear infinite alternate;
+}
+.cassette .label .cutout .window .spool:last-of-type {
+  right: -64%;
+  animation: spooling 3.5s linear infinite alternate-reverse;
+}
+@keyframes spooling {
+  from {
+    box-shadow: 0 0 0 0.5em #626262, 0 0 0 calc(0.5em + 3px) #353535;
+  }
+  to {
+    box-shadow: 0 0 0 5em #626262, 0 0 0 calc(5em + 3px) #353535;
+  }
+}
+.cassette .head {
+  width: 60%;
+  height: 25.5%;
+  position: absolute;
+  margin-left: 20%;
+  bottom: -4%;
+}
+.cassette .head:before, .cassette .head:after {
+  display: block;
+  content: "";
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  background: #4b4b56;
+  border: 4px solid #353535;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background-repeat: no-repeat;
+  background-position: 15% 8%;
+  background-size: 100% 4px;
+}
+.cassette .head:before {
+  transform: skew(-15deg);
+  left: -8%;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  box-shadow: inset 6px 0 0 0 #4b4b56;
+}
+.cassette .head:after {
+  transform: skew(15deg);
+  right: -8%;
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  box-shadow: inset -6px 0 0 0 #4b4b56;
+}
+.cassette .screw {
+  position: absolute;
+  text-align: right;
+  top: 7%;
+  left: 4%;
+}
+.cassette .screw:before {
+  content: "⃠︎";
+  font-size: 1.1em;
+  color: #353535;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.cassette .screw.i2 {
+  right: 1%;
+}
+.cassette .screw.i2:before {
+  transform: rotate(90deg);
+}
+.cassette .screw.i3 {
+  bottom: 1%;
+}
+.cassette .screw.i3:before {
+  transform: rotate(-30deg);
+}
+.cassette .screw.i4 {
+  right: 1%;
+  bottom: 1%;
+}
+.cassette .screw.i4:before {
+  transform: rotate(-90deg);
+}
+.cassette .screw.i5 {
+  left: calc(50% + 0.5em);
+  bottom: 9%;
+}
+.cassette .screw.i5:before {
+  transform: rotate(45deg);
+}
+.cassette .hole {
+  width: 5%;
+  background: #8fe2ec;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #353535;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2.5%;
+}
+.cassette .hole:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.cassette .hole.i1 {
+  bottom: 0%;
+  left: 28%;
+}
+.cassette .hole.i2 {
+  bottom: 2%;
+  left: 38%;
+}
+.cassette .hole.i3 {
+  bottom: 0%;
+  left: 72%;
+}
+.cassette .hole.i4 {
+  bottom: 2%;
+  left: 62%;
+}
